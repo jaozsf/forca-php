@@ -70,6 +70,7 @@ $perdeu = $_SESSION['erros'] >= 6;
             font-family: Arial, sans-serif;
             text-align:center;
             margin-top:100px;
+            background-color: #f5f5f5;
         }
 
         .palavra{
