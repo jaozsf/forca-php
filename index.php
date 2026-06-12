@@ -25,6 +25,11 @@ if (isset($_POST['letra'])) {
 
     $letra = strtoupper(trim($_POST['letra']));
 
+    if (!preg_match('/^[A-Z]$/', $letra)) {
+    header("Location: index.php");
+    exit;
+}
+
     if ($letra != "") {
 
         if (strpos($_SESSION['palavra'], $letra) !== false) {
